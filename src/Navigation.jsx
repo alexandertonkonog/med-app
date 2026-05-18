@@ -1,5 +1,6 @@
 import React from 'react';
 import { RUSSDENT_COLORS, FF } from './Shared';
+import styles from './Navigation.module.scss';
 
 const NAV_TABS = [
   { id: 'home',    label: 'Главная'    },
@@ -59,11 +60,10 @@ const NavIcon = ({ id, active }) => {
 };
 
 export const RNavigation = ({ activeTab, setActiveTab }) => (
-  <nav style={{
+  <nav className={styles.nav} style={{
     display: 'flex',
     background: 'rgba(249,249,251,0.97)',
     borderTop: `1px solid ${RUSSDENT_COLORS.border}`,
-    paddingBottom: 30,
     boxShadow: '0 -4px 24px rgba(194,182,200,0.3)',
     position: 'relative',
     zIndex: 20,

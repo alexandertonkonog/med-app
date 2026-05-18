@@ -1,0 +1,5 @@
+// On real mobile devices the nav sits above the home indicator.
+// env(safe-area-inset-bottom) provides the correct inset when viewport-fit=cover.
+.nav {
+  padding-bottom: max(30px, env(safe-area-inset-bottom, 30px));
+}

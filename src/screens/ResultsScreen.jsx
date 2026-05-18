@@ -37,7 +37,7 @@ const catLabel = (cat) => ({ xray: 'Снимок', analysis: 'Анализ', con
 
 const ResultDetail = ({ result, onBack }) => (
   <div style={{ height: '100%', overflowY: 'auto', background: RUSSDENT_COLORS.bg, fontFamily: FF }}>
-    <div style={{ paddingTop: 62 }}>
+    <div style={{ paddingTop: 'var(--screen-top-pad, 62px)' }}>
       <RScreenHeader title={result.type} onBack={onBack} />
     </div>
 
@@ -108,7 +108,7 @@ export const ResultsScreen = () => {
 
   return (
     <div style={{ height: '100%', overflowY: 'auto', background: RUSSDENT_COLORS.bg, fontFamily: FF }}>
-      <div style={{ padding: '68px 20px 12px' }}>
+      <div style={{ padding: 'var(--screen-top-pad, 68px) 20px 12px' }}>
         <h2 style={{ margin: '0 0 14px', fontSize: 20, fontWeight: 700, color: RUSSDENT_COLORS.textPrimary }}>Результаты</h2>
         <div style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 2 }}>
           {CATS.map(c => (

@@ -90,7 +90,7 @@ export const BookingScreen = () => {
 
   return (
     <div style={{ height: '100%', overflowY: 'auto', background: RUSSDENT_COLORS.bg, fontFamily: FF }}>
-      <div style={{ padding: '68px 20px 14px', borderBottom: `1px solid ${RUSSDENT_COLORS.border}` }}>
+      <div style={{ padding: 'var(--screen-top-pad, 68px) 20px 14px', borderBottom: `1px solid ${RUSSDENT_COLORS.border}` }}>
         <h2 style={{ margin: '0 0 12px', fontSize: 20, fontWeight: 700, color: RUSSDENT_COLORS.textPrimary }}>
           Запись к врачу
         </h2>

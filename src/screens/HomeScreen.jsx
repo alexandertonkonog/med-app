@@ -65,7 +65,7 @@ export const HomeScreen = ({ onTab }) => {
 
   return (
     <div style={{ height: '100%', overflowY: 'auto', background: RUSSDENT_COLORS.bg, fontFamily: FF }}>
-      <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', padding: '68px 20px 14px', background: RUSSDENT_COLORS.bg }}>
+      <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', padding: 'var(--screen-top-pad, 68px) 20px 14px', background: RUSSDENT_COLORS.bg }}>
         <div>
           <p style={{ margin: 0, fontSize: 12, color: RUSSDENT_COLORS.textSecondary, letterSpacing: '0.04em' }}>Клиника</p>
           <h1 style={{

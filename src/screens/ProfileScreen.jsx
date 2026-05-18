@@ -35,7 +35,7 @@ const SCard = ({ title, children }) => (
 
 export const ProfileScreen = () => (
   <div style={{ height: '100%', overflowY: 'auto', background: RUSSDENT_COLORS.bg, fontFamily: FF }}>
-    <div style={{ padding: '68px 20px 14px' }}>
+    <div style={{ padding: 'var(--screen-top-pad, 68px) 20px 14px' }}>
       <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700, color: RUSSDENT_COLORS.textPrimary }}>Профиль</h2>
     </div>
 

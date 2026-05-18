@@ -1,0 +1,29 @@
+// Breakpoint: ≤ 600px → mobile layout (no iOS frame)
+$mobile: 600px;
+
+// ── Desktop: dark background with centered iOS frame ──────────────────────────
+.shell {
+  min-height: 100vh;
+  position: relative;
+  background: radial-gradient(ellipse at 50% 35%, #241a3c 0%, #0c0a18 65%);
+}
+
+// Absolutely centered, scaled down when viewport is smaller than the device
+.scaler {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  line-height: normal;
+}
+
+// ── Mobile: full-screen native layout ────────────────────────────────────────
+.mobileApp {
+  height: 100vh;       // fallback
+  height: 100dvh;      // shrinks when browser chrome appears
+  overflow: hidden;
+
+  // Screens read this variable for their top padding.
+  // On mobile the real device safe-area replaces the iOS frame simulation.
+  --screen-top-pad: calc(env(safe-area-inset-top, 0px) + 20px);
+}
