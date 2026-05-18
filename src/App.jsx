@@ -51,6 +51,7 @@ export const App = () => {
         transform: `scale(${scale})`,
         transformOrigin: 'center center',
         lineHeight: 'normal',
+        position: 'absolute'
       }}>
         <IOSDevice width={402} height={874}>
           <AppContent />
