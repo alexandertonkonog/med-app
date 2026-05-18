@@ -17,6 +17,7 @@ const NavIcon = ({ id, active }) => {
   if (id === 'home') return (
     <svg width="23" height="23" viewBox="0 0 24 24" fill="none">
       <path d="M3 12L12 3L21 12V21H15V15H9V21H3V12Z"
+      
         stroke={c} strokeWidth={sw} strokeLinejoin="round" fill={fa}/>
     </svg>
   );
